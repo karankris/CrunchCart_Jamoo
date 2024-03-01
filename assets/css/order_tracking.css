@@ -1,0 +1,37 @@
+.tracking_form input[type=text],.tracking_form input[type=email]{
+    padding: 20px 28px;
+    border-radius: 25px !important;
+    outline: none !important;
+    border: 1px solid #dddada;
+}
+.tracking_form input[type=text]:focus,.tracking_form input[type=email]:focus{
+border: 1px solid #48D892;
+}
+.tracking_form textarea{
+    padding: 20px 28px;
+    border-radius: 25px !important;
+    outline: none !important;
+    border: 1px solid #dddada;
+}
+.tracking_form input::placeholder,.tracking_form textarea::placeholder {
+    color: rgb(37, 36, 36);
+    opacity: 1;
+    transition: opacity 1s ease; 
+}
+.tracking_form input:focus::placeholder,.tracking_form textarea:focus::placeholder{
+    opacity: 0;
+}
+.btn_submit{
+    background-color: #313F90;
+    color: #fff;
+    border-radius: 35px;
+    font-weight: 600;
+    padding: 18px 28px;
+}
+.btn_submit:hover{
+    padding: 18px 28px;
+    background-color: #48D892;
+    color:#313F90;
+    border-radius: 35px;
+    font-weight: 600;
+}

@@ -1,0 +1,602 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    transition: 0.5s !important;
+    scroll-behavior: smooth;
+    /* border: 1px solid #000; */
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/* ---------------------NAVBAR--------------- */
+
+#topper{
+    background-color: #0a525b;
+    color: #fff;
+    font-size: 14px;
+}
+#topper .topper_left{
+    gap: 43px;
+}
+#topper .topper_link{
+    color: #fff
+}
+#topper .muted_text{
+    color: rgb(185, 184, 184);
+}
+#topper .email{
+    color: #fff
+}
+#topper .five_star{
+   height: 20px;
+}
+#topper .country_currency .btn{
+   background-color: transparent;
+   border: none;
+}
+#topper .country_currency .country_flag{
+  height: 15px;
+}
+
+/* ----------------------------- */
+#main_nav .left_sidebar{
+    height: 32px;
+}
+#main_nav .categories_box{
+    font-size: 18px;
+    background-color: #f1f2f8;
+    color: #313f90;
+    font-weight: 500;
+}
+#main_nav .looking_for_box{
+    max-width: 300px;
+    min-width: 500px;
+}
+#main_nav .looking_for_input{
+    width: 100%;
+}
+#main_nav .looking_for_input , #main_nav .search_btn{
+    border: none;
+    outline: none;
+}
+#main_nav .looking_for_input:focus{
+    border: none;
+    outline: none;
+}
+#main_nav .search_btn{
+    height: 100%;
+    width: 80px;
+    background-color: transparent;
+}
+#main_nav .search_btn:hover{
+   background-color: #50f0a3;
+}
+
+
+#main_nav .categories_box:hover{
+    background-color: #50f0a3;
+}
+#main_nav .categories_box i{
+    opacity: 0.7;
+}
+
+#main_nav .categories_lookingfor_box{
+    position: relative;
+}
+#main_nav .categories_lookingfor_box .categories_dropdown{
+    position: absolute;
+    top: 70px;
+    width:140%;
+    display: none;
+    transition: opacity .3s, transform .3s, visibility .3s ease;
+    /* opacity: 0; */
+}
+#main_nav .categories_box:hover .categories_dropdown {
+    display: flex;
+    transition: opacity .3s, transform .3s, visibility .3s ease;
+
+    /* opacity: 1; */
+    transform: translateY(-10px);
+    top: 40px;
+    z-index: 10;
+}
+#main_nav .categories_lookingfor_box .flash_sale_img{
+    position: absolute;
+    bottom: 60px;
+    width: 222px;
+    left: 68px;
+    border-right: 1px solid rgb(167, 167, 167);
+}
+/* #main_nav .categories_lookingfor_box .straight_line{
+    border-left: 2px;
+    height: 50px;
+    width: 0px;
+    background-color: rgb(63, 63, 63);
+} */
+#main_nav .categories_lookingfor_box .categories_dropdown li{
+  color: rgb(96 96 96);
+  font-size: 15px;
+}
+#main_nav .categories_lookingfor_box .categories_dropdown li:hover{
+  color: #50f0a3;
+}
+.country:hover .dropdown-menu{
+    display: block;
+    top: 27px;
+}
+.currency:hover .dropdown-menu{
+    display: block;
+    top: 27px;
+    left: -50px;
+}
+
+
+
+#main_nav .track_orders_box .track_orders{
+    height: 23px;
+}
+#main_nav .track_orders_box .muted_text{
+    color: rgb(85, 85, 85);
+}
+#main_nav .icons_box i{
+   font-size: 20px;
+   color: rgb(53, 53, 53);
+}
+#main_nav .icons_box i:hover{
+   color: #50f0a3;
+}
+#main_nav .number_01{
+    position: absolute;
+    top: -41%;
+    right: -70%;
+    background: #50f0a3;
+    font-size: 10px;
+    padding: 2px 5px;
+    color: #000;
+}
+/* -------------------------- */
+#secondary_nav .btn-group .dropdown-toggle{
+    background-color: transparent !important;
+    color: #000;
+    border: none !important;
+}
+#secondary_nav .btn-group .show {
+    color: #50f0a3;
+}
+#secondary_nav .pages:hover .dropdown-toggle,.nav-link:hover{
+    color: #50f0a3;
+}
+#secondary_nav .btn-group .dropdown-toggle{
+    height: 40px;
+}
+#secondary_nav .pages:hover .dropdown-menu{
+    display: block;
+    top: 40px;
+}
+#secondary_nav .pages .dropdown-item:hover{
+    background-color: transparent !important;
+    color: #50f0a3;
+}
+#secondary_nav .contact_btn{
+    color: #000;
+}
+#secondary_nav .percentage_hot_deals{
+    height: 24px;
+}
+#secondary_nav .hot_deals{
+    color: #f0508a;
+}
+#secondary_nav .call_support{
+    color: #8d92a9;
+}
+#secondary_nav .call_support_number{
+    color: #2b41a1;
+}
+/* ------------------------------------------------------------------- */
+
+footer #contact_details{
+    gap: 160px;
+    background-color: #0a525b;
+    color: #fff;
+}
+footer #contact_details .contact_number , footer #contact_details .contact_email{
+    color: #50f0a3;
+}
+
+footer #contact_details .social_media_icon_box .social_media_icons{
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff1a;
+}
+footer #contact_details .social_media_icon_box .social_media_icons:hover{
+   background-color: #50f0a3;
+}
+footer #contact_details .social_media_icon_box .social_media_icons:hover i{
+   color: #1b449c;
+   opacity: 1;
+}
+footer #contact_details .social_media_icon_box .social_media_icons i{
+    color: #fff;
+    opacity: 0.7;
+}
+
+/* ---------------------------- */
+footer .contact_info{
+    gap: 135px;
+    position: relative;
+}
+footer .email_envelop{
+    height: 56px;
+}
+footer .send_me_info{
+    color: #2b41a1;
+    font-size: 25px;
+    line-height: 28px;
+}
+footer .email_address_box{
+    max-width: 300px;
+    min-width: 550px;
+    transition: 0.5s;
+}
+footer .email_address_box i{
+    display: none;
+    transition: 0.5s;
+}
+footer .email_input{
+    width: 100%;
+}
+footer .email_address_box{
+    border: 1px solid #0000005b;
+}
+footer .email_address_box:hover{
+    border: 1px solid #50f0a3;
+}
+footer .email_input:focus{
+    border: none;
+    outline: none;
+}
+footer .email_input , footer .subscribe_btn{
+    border: none;
+    outline: none;
+}
+footer .subscribe_btn{
+    height: 48px;
+    background-color: #50f0a3;
+    color: #2b41a1;
+}
+footer .subscribe_btn:hover i{
+   display: inline-block;
+}
+
+.parallax_img_box {
+        position: absolute; 
+        left: 80%;
+        top: -202%;
+}
+.image {
+    /* width: 50%; Adjust the width of your image */
+    height: auto;
+    position: relative; /* Position absolutely within the container */
+    top: 0;
+    left: 0; /* Initially position the image at the left */
+    transition: left 5s; /* Add smooth transition */
+}
+
+.middle_content , .end_content{
+    height: 1000px;
+}
+footer .customer_box .customer_link{
+    font-size: 17px;
+    color: rgb(61, 61, 61);
+}
+footer .customer_box .customer_link:hover{
+    
+    color: #50f0a3;
+}
+
+footer .customer_box .footer_head_title{
+    color: #313f90;
+}
+footer .customer_box .store_location ,footer .customer_box .meeting_time{
+    color: rgb(165, 165, 165);
+}
+footer .copyright_box .highlight{
+    color: #50f0a3;
+}
+footer .copyright_box .copyrights_content{
+    font-size: 17px;
+    color: rgb(75, 75, 75);
+}
+/* ------------------- */
+footer #mobile_footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999;
+
+}
+footer #mobile_footer .mobile_nav_item{
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(43, 43, 43);
+}
+footer #mobile_footer .mobile_nav_item span{
+    font-weight: 700;
+}
+footer #mobile_footer .mobile_nav_item img{
+    height: 20px;
+}
+/* ----------------------- */
+/* offcanvs */
+.offcanvas {
+    max-width: 89%;
+}
+.hover-underline-animation {
+    position: relative;
+    color: #000 !important;
+    text-decoration: none;
+  }
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #50f0a3;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+    transform: scaleX(0);
+}
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* --------------- */
+ .item:hover{
+      cursor: grab;
+  }
+  .nav-pills .nav-link{
+      color: rgb(117, 117, 117) !important;
+  }
+ 
+  .nav-pills .nav-link.active{
+      background: transparent;
+      color: #000 !important;
+  }
+  .accordion-button:focus {
+   
+    border-color: transparent !important;
+  
+    box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+    color: #50f0a3 !important;
+    background-color: transparent !important;
+     
+}
+.accordion-button::after {
+    transform: rotate(-90deg);
+   
+}
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(0deg);
+}
+.accordion-item {
+   
+    border: none;
+}
+.tab-pane li a{
+    color: rgb(56, 56, 56) !important;
+}
+#collapseFour .accordion-body li{
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+.contact_mobile{
+    color: #000;
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+@media (max-width: 1450px) and (min-width: 1201px) {
+    #main_nav .looking_for_box {
+        max-width: 300px;
+        min-width: 338px;
+    }
+    #main_nav .categories_box:hover .categories_dropdown {
+      
+        left: -80px;
+    }
+    footer .email_address_box {
+        max-width: 300px;
+        min-width: 323px;
+    }
+    .parallax_img_box {
+        position: absolute;
+        left: 75%;
+        top: -202%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 1200px) and (min-width: 992px) {
+    #main_nav .looking_for_box {
+        max-width: auto;
+        min-width: auto;
+    }
+    .parallax_img_box {
+        left: 72%;
+        top: -201%;
+    }
+    footer .contact_info {
+        gap: 19px;
+    }
+    footer .email_address_box {
+        width: 100%;
+        max-width: auto;
+        min-width: auto;
+    }
+    #main_nav .categories_box:hover .categories_dropdown {
+        left: -160px;
+    }
+    #main_nav .categories_lookingfor_box .categories_dropdown {
+        width: 187%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    
+}
+@media (max-width: 992px) and (min-width: 819px)  {
+    #main_nav .looking_for_box {
+        max-width: auto;
+        min-width: auto;
+    }
+    footer .contact_info {
+        gap: 17px;
+    }
+    footer #contact_details {
+        gap: 78px
+    }
+    footer #mobile_footer .mobile_nav_item img {
+        height: 30px;
+    }
+    footer #mobile_footer .mobile_nav_item{
+        font-size: 15px;
+       
+    }
+}
+
+/* ipad air  */
+@media only screen and (max-device-width: 820px) {
+    #main_nav .looking_for_box {
+        max-width: auto;
+        min-width: auto;
+    }
+    footer .contact_info {
+        gap: 17px;
+    }
+    footer #contact_details {
+        gap: 58px
+    }
+    footer #mobile_footer .mobile_nav_item img {
+        height: 29px;
+    }
+    footer #mobile_footer .mobile_nav_item{
+        font-size: 15px;
+       
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    #topper .topper_left{
+        gap: 20px;
+    }
+    footer #contact_details {
+        gap: 15px;
+    }
+    footer .contact_info {
+        gap: 33px;
+    }
+    footer .email_address_box {
+        width: 100%;
+        max-width: auto;
+        min-width: auto;
+    }
+    footer #mobile_footer .mobile_nav_item img {
+        height: 31px;
+    }
+    footer #mobile_footer .mobile_nav_item{
+        font-size: 16px;
+       
+    }
+    
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    footer #contact_details {
+        gap: 13px;
+    }
+    footer .contact_info {
+        gap: 31px;
+    }
+    footer #mobile_footer .mobile_nav_item img {
+        height: 30px;
+    }
+    footer #mobile_footer .mobile_nav_item{
+        font-size: 15px;
+       
+    }
+}
+
+/* /* ---- iphone 13pro max ---------- */
+@media only screen and (max-device-width: 430px) {
+  
+}
+
+/* /* ---- iphone XR max ---------- */
+@media only screen and (max-device-width: 414px) {
+    .bottom_white_bg {
+        right: -37%;
+        bottom: -0.4%;
+    }
+}
+
+/* pixel 5  ----------- */
+@media only screen and (max-device-width: 393px) {
+   
+   
+}
+
+/* iPhone 12 pro ----------- */
+@media only screen and (max-device-width: 390px) {
+    
+}
+
+/* iPhone 6, 7, 8 ----------- */
+@media only screen and (max-device-width: 375px) {
+    #topper .topper_left{
+        gap: 6px;
+    }
+    footer #contact_details {
+        gap: 12px;
+    }
+    footer .contact_info {
+        gap: 30px;
+    }
+    footer .email_address_box {
+        width: 100%;
+        max-width: auto;
+        min-width: auto;
+    }
+    footer .copyright_box {
+        gap: 12px;
+    }
+    footer #mobile_footer .mobile_nav_item img {
+        height: 25px;
+    }
+    footer #mobile_footer .mobile_nav_item {
+        font-size: 12px;
+    }
+
+   
+}
+
+/* samsung galaxy  */
+@media only screen and (max-device-width: 360px) {
+
+}
+
+

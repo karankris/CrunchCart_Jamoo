@@ -1,0 +1,90 @@
+.font_theme2,.font_theme2:hover{
+    color: #48D892;
+}
+.sec1{
+    min-height: 500vh;
+}
+.bg_sec1{
+    background-image: url(../images/faq/faq_bg.jpg);
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    background-size: cover;
+}
+.bg_sec1::after{
+    content: '';
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.text_up{
+    z-index: 999;
+}
+.bg_white{
+    z-index: 999;
+    border-top: 5px solid #48D892;
+    border-radius:25px 25px 0 0;
+}
+.position_about_card{
+    position: absolute;
+    top: 70%;
+}
+.accordion-item{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    padding-bottom: 15px;
+
+}
+.accordion-button:focus{
+    box-shadow: none !important;
+    color: black;
+}
+
+.accordion-button::after {
+    display: none;
+}
+.accordion-button{
+    background-color: transparent;
+}
+/* Custom icons for collapsed and expanded states */
+.accordion-button.collapsed::before {
+    font-family: 'Bootstrap Icons';
+            content: '\2b';
+    font-size: 25px;
+    margin-right: 30px; /* Adjust spacing if needed */
+}
+
+.accordion-button:not(.collapsed)::before {
+    content: '\2212';
+    float: left;
+    font-size: 25px;
+    margin-right: 30px; /* Adjust spacing if needed */
+}
+@media only screen and (max-device-width: 500px) {
+
+  .sec1{
+    min-height: 550vh;
+  }
+}
+@media only screen and (max-device-width: 390px) {
+
+    .sec1{
+      min-height: 600vh;
+    }
+  }
+  @media only screen and (max-device-width: 325px) {
+
+    .sec1{
+      min-height: 660vh;
+    }
+  }

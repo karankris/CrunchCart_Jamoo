@@ -1,0 +1,62 @@
+.font_theme2{
+    color: #48D892;
+}
+.map{
+    height: 90vh;
+}
+#location{
+    border-radius: 30px;
+}
+.contact_form input[type=text],.contact_form input[type=email]{
+    padding: 20px 28px;
+    border-radius: 25px !important;
+    outline: none !important;
+    border: 1px solid #dddada;
+}
+.contact_form input[type=text]:focus,.contact_form input[type=email]:focus{
+border: 1px solid #48D892;
+}
+.contact_form textarea{
+    padding: 20px 28px;
+    border-radius: 25px !important;
+    outline: none !important;
+    border: 1px solid #dddada;
+}
+.contact_form input::placeholder,.contact_form textarea::placeholder {
+    color: rgb(37, 36, 36);
+    opacity: 1;
+    transition: opacity 1s ease; 
+}
+.contact_form input:focus::placeholder,.contact_form textarea:focus::placeholder{
+    opacity: 0;
+}
+
+.contact_form .btn_submit{
+    background-color: #313F90;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 600;
+    width: 100px;
+    position: relative;
+}
+.btn_submit::after {
+    content: '\2192'; /* Right arrow character */
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #fff;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.btn_submit:hover {
+    width: 135px; /* Adjust the width as needed */
+    background-color: #48D892;
+}
+
+.btn_submit:hover::after {
+    opacity: 1;
+}

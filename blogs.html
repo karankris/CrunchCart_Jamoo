@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <!-- bootstrap file -->
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png"> -->
+    <!-- <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+     -->
+    <!-- <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png"> -->
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Orelega+One&family=Roboto+Condensed:ital,wght@1,300&family=Yeseva+One&display=swap"
+        rel="stylesheet" />
+    <!-- owl-carousel file -->
+    <link rel="stylesheet" href="assets/owl/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/owl/css/owl.theme.default.min.css" />
+    <!-- icon css -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- css file -->
+    <link rel="stylesheet" href="assets/css/blogs.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/header-footer.css" />
+    <!-- media query file -->
+    <link rel="stylesheet" href="assets/css/mediaquery.css">
+
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <!-- ------------- aos animation ------------ -->
+    <link rel="stylesheet" type="text/css" href="assets/aos/css/aos.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+
+<body>
+    
+
+    <header>
+        <div class="px-xl-5 px-md-4 py-2 " id="topper">
+            <div class="d-flex justify-content-between align-items-center flex-md-row  flex-column">
+            <div class="d-flex align-items-center justify-content-center flex-wrap topper_left ">
+                <div class="d-flex align-items-center  free_shipping_box text-nowrap">
+                    <a href="" class="topper_link text-decoration-none d-flex align-items-center gap-2" >
+                    <i class="fa-solid fa-truck d-md-inline-block d-none"></i>
+                    <strong>Free shipping <span class="fw-bold muted_text ms-1"> on orders $39+</span></strong>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center question_box text-nowrap">
+                    <a href="" class="topper_link text-decoration-none d-flex align-items-center gap-2" >
+                        <i class="fa-regular fa-envelope d-md-inline-block d-none"></i>
+                        <strong>Question?<span class="fw-bold muted_text ms-1">Write us an </span><a href="" class="email">Email</a></strong> 
+                    </a>
+                </div>
+                <div class="d-md-flex d-none align-items-center store_box text-nowrap">
+                    <a href="" class="topper_link text-decoration-none d-flex align-items-center gap-2" >
+
+                        <i class="fa-solid fa-house d-md-inline-block d-none"></i>
+                        <strong>Find</strong> <span class="fw-bold muted_text"> our store</span>
+                    </a>
+                </div>
+                <div class="d-xl-flex d-none align-items-center happy_customers_box text-nowrap">
+                    <img src="./assets/images/header_footer/five_star.png" class="five_star" alt="">
+                    <strong>Over 100k happy customers</strong>
+                </div>
+
+            </div>
+            <div class="country_currency">
+                
+                <div class="btn-group country">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" id="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-globe me-1"></i> ENG
+                    </button>
+                    <ul class="dropdown-menu pt-2">
+                        <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img src="./assets/images/header_footer/ger.jpg" class="country_flag" alt=""> GER</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img src="./assets/images/header_footer/ita.jpg" class="country_flag" alt=""> ITA</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><img src="./assets/images/header_footer/hin.jpg" class="country_flag" alt=""> HIN</a></li>
+                        <li><a class="dropdown-item" href="#">REQUIRES WPML</a></li>
+                    </ul>
+                  </div>
+                <div class="btn-group currency">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" id="dropdown-toggle2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        $ USD
+                    </button>
+                    <ul class="dropdown-menu pt-2" >
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-euro-sign me-1"></i> EUR</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+        </div>
+        <div class="" id="main_nav">
+            <div class="px-xl-5 px-md-4 px-3 py-4 d-flex justify-content-between align-items-center ">
+                <a class="d-lg-none d-block" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <img src="./assets/images/header_footer/left_sidebar.png" class="left_sidebar" alt="">
+                </a>
+                <div class="ps-lg-3 ps-md-2 ps-0">
+                    <a href="index.html"><img src="./assets/images/header_footer/logo.svg" alt=""></a>
+                </div>
+                <div class=" gap-3 categories_lookingfor_box d-lg-flex d-none">
+                    <div class="categories_box border px-4 py-2 rounded-pill text-nowrap ">
+                        <span class="pe-xl-5 pe-lg-4 pe-md-3 me-xl-5 me-lg-4 me-md-3">Categories</span>
+                        <i class="ps-5 fa-solid fa-bars"></i>
+                        <div class="pt-4 categories_dropdown">
+                            <div class="row bg-white border shadow p-4">
+                                <div class="col-2">
+                                    <div class="">
+                                        <img src="./assets/images/header_footer/ladies_finger.jpg" alt="">
+                                        <h5 class="py-3">Vegetables</h5>
+                                        <ul>  
+                                            <a href="" class="text-decoration-none"><li>Leafy Vegetables</li></a>
+                                            <a href="" class="text-decoration-none"><li>Root Vegetables</li></a>
+                                            <a href="" class="text-decoration-none"><li>Onions & Shallots</li></a>
+                                            <a href="" class="text-decoration-none"><li>Tomatoes</li></a>
+                                            <a href="" class="text-decoration-none"><li>Mushrooms</li></a>
+                                            <a href="" class="text-decoration-none"><li>Potatoes & Yams</li></a>
+                                            <a href="" class="text-decoration-none"><li>Cucumbers</li></a>
+                                            <a href="" class="text-decoration-none"><li>Squash & Zucchini</li></a>
+                                            <a href="" class="text-decoration-none"><li>Corn</li></a>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="">
+                                        <img src="./assets/images/header_footer/chicken.jpg" alt="">
+                                        <h5 class="py-3">Meat & Poultry</h5>
+                                        <ul>  
+                                            <a href="" class="text-decoration-none"><li>Beef </li></a>
+                                            <a href="" class="text-decoration-none"><li>Poultry</li></a>
+                                            <a href="" class="text-decoration-none"><li>Pork</li></a>
+                                            <a href="" class="text-decoration-none"><li>Lamb</li></a>
+                                            <a href="" class="text-decoration-none"><li>Deli Meat</li></a>
+                                            <a href="" class="text-decoration-none"><li>Pre-Packaged</li></a>
+                                            <a href="" class="text-decoration-none"><li>Exotic Meat</li></a>
+        
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-2"><div class="">
+                                    <img src="./assets/images/header_footer/bread.jpg" alt="">
+                                    <h5 class="py-3">Meat & Poultry</h5>
+                                    <ul>  
+                                        <a href="" class="text-decoration-none"><li>Mushrooms</li></a>
+                                        <a href="" class="text-decoration-none"><li>Potatoes & Yams</li></a>
+                                        <a href="" class="text-decoration-none"><li>Cucumbers</li></a>
+                                        <a href="" class="text-decoration-none"><li>Lamb</li></a>
+                                        <a href="" class="text-decoration-none"><li>Deli Meat</li></a>
+                                        <a href="" class="text-decoration-none"><li>Pre-Packaged</li></a>
+                                        <a href="" class="text-decoration-none"><li>Exotic Meat</li></a>
+        
+                                    </ul>
+                                </div></div>
+                                <div class="col-2">
+                                    <div class="">
+                                        <img src="./assets/images/header_footer/strawberry.jpg" alt="">
+                                        <h5 class="py-3">Meat & Poultry</h5>
+                                        <ul>  
+                                            <a href="" class="text-decoration-none"><li>Exotic Meat</li></a>
+                                            <a href="" class="text-decoration-none"><li>Poultry</li></a>
+                                            <a href="" class="text-decoration-none"><li>Pork</li></a>
+                                            <a href="" class="text-decoration-none"><li>Root Vegetables</li></a>
+                                            <a href="" class="text-decoration-none"><li>Onions & Shallots</li></a>
+                                            <a href="" class="text-decoration-none"><li>Tomatoes</li></a>
+                                            <a href="" class="text-decoration-none"><li>Poultry</li></a>
+                                            <a href="" class="text-decoration-none"><li>Pork</li></a>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-2"><div class="">
+                                    <img src="./assets/images/header_footer/beverages.jpg" alt="">
+                                    <h5 class="py-3">Meat & Poultry</h5>
+                                    <ul>  
+                                        <a href="" class="text-decoration-none"><li>Leafy Vegetables</li></a>
+                                        <a href="" class="text-decoration-none"><li>Root Vegetables</li></a>
+                                        <a href="" class="text-decoration-none"><li>Onions & Shallots</li></a>
+                                        <a href="" class="text-decoration-none"><li>Tomatoes</li></a>
+                                        <a href="" class="text-decoration-none"><li>Deli Meat</li></a>
+                                        <a href="" class="text-decoration-none"><li>Pork</li></a>
+                                        <a href="" class="text-decoration-none"><li>Root Vegetables</li></a>
+                                        <a href="" class="text-decoration-none"><li>Cucumbers</li></a>
+                                        <a href="" class="text-decoration-none"><li>Lamb</li></a>
+        
+                                    </ul>
+                                </div>
+                            </div>
+                                <div class="col-2"><div class="">
+                                    <img src="./assets/images/header_footer/snacks.jpg" alt="">
+                                    <h5 class="py-3">Meat & Poultry</h5>
+                                    <ul>  
+                                        <a href="" class="text-decoration-none"><li>Beef </li></a>
+                                        <a href="" class="text-decoration-none"><li>Poultry</li></a>
+                                        <a href="" class="text-decoration-none"><li>Pork</li></a>
+                                        <a href="" class="text-decoration-none"><li>Lamb</li></a>
+                                        <a href="" class="text-decoration-none"><li>Deli Meat</li></a>
+                                        <a href="" class="text-decoration-none"><li>Pre-Packaged</li></a>
+                                        <a href="" class="text-decoration-none"><li>Exotic Meat</li></a>
+        
+                                    </ul>
+                                </div></div>
+                                <!-- <img src="./assets/images/header_footer/verticalmenu_img8.jpeg" class="img-fluid p-0 rounded-4 " alt="">
+                                <img src="./assets/images/header_footer/flash_sale.png" class="flash_sale_img pe-5" alt="">
+                                <div class="straight_line"></div> -->
+                                <img src="./assets/images/header_footer/categories_banner.png" class="img-fluid p-0 rounded-4 mt-4" alt="">
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="looking_for_box border ps-4 rounded-pill d-flex justify-content-between align-items-center">
+                            <input type="text" placeholder="What are you looking for?" class="looking_for_input  py-2" name="" id="">
+                            <button class="search_btn rounded-pill"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+                <div class="d-flex gap-4 pe-lg-3 pe-md-2 pe-1 track_orders_box">
+                    <div class=" align-items-center gap-2 py-2 d-lg-flex d-none text-nowrap">
+                        <img src="./assets/images/header_footer/track_orders.png" class="track_orders" alt="">
+                        <span class="fw-bold muted_text">Track your orders</span>
+                    </div>
+                    <div class="d-flex  align-items-center gap-3 py-2 icons_box">
+                        <a href="my_account.html" class=" d-lg-flex d-none"><i class="fa-regular fa-user"></i></a> 
+                        <a href="wishlist.html" class=" d-lg-flex d-none"><div class="position-relative">
+                            <i class="fa-regular fa-heart"></i>
+                            <div class="number_01 rounded-circle">01</div>
+                        </div></a>
+                        <a href="cart.html">
+                        <i class="fa-solid fa-bag-shopping"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="px-5 py-2  justify-content-between border d-lg-flex d-none " id="secondary_nav">
+            <div class="d-flex gap-3 align-items-center">
+                <div class="btn-group">
+                    <button onclick="window.location.href = 'index.html';" class="btn btn-secondary dropdown-toggle fw-bolder" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Home
+                    </button>
+                   
+                  </div>
+                  <div class="btn-group">
+                    <button onclick="window.location.href = 'shop.html';" class="btn btn-secondary dropdown-toggle fw-bolder" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop
+                    </button>
+                    
+                  </div>
+                  <div class="btn-group">
+                    <button onclick="window.location.href = 'blogs.html';" class="btn btn-secondary dropdown-toggle fw-bolder" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Blog
+                    </button>
+                    
+                  </div>
+                  <div class="btn-group pages">
+                    <button class="btn btn-secondary dropdown-toggle fw-bolder" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pages
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li class="ps-3 pe-5"><a class="dropdown-item pe-5" href="about_us.html">About Us</a></li>
+                      <li class="ps-3 pe-5"><a class="dropdown-item pe-5" href="faq.html">FAQ</a></li>
+                      <li class="ps-3 pe-5"><a class="dropdown-item pe-5" href="404.html">404 Page</a></li>
+                      <li class="ps-3 pe-5"><a class="dropdown-item pe-5" href="order_tracking.html">Order Tracking </a></li>
+                      <li class="ps-3 pe-5"><a class="dropdown-item pe-5" href="my_account.html">My Account</a></li>
+                      <li class="ps-3 pe-5"><a class="dropdown-item pe-5" href="cart.html">Cart</a></li>
+                      <li class="ps-3 pe-5"><a class="dropdown-item pe-5" href="wishlist.html">Wishlist</a></li>
+                    </ul>
+                  </div>
+                  <strong><a href="contact_us.html" class="text-decoration-none contact_btn">Contact</a></strong>
+            </div>
+            <div class="d-flex gap-3">
+                <div class="d-flex  align-items-center gap-1">
+                    <img src="./assets/images/header_footer/percentage.png" class="percentage_hot_deals" alt="">
+                    <strong class="hot_deals">Hot Deals</strong>
+                </div>
+                <a href="" class="d-flex  align-items-center gap-1 text-decoration-none">
+                    <img src="./assets/images/header_footer/telephone.png" class="percentage_hot_deals" alt="">
+                    <span class="call_support fw-bold">Call support: </span>
+                    <strong class="call_support_number">(888) 910-2330</strong>
+                </a>
+            </div>
+       </div>
+
+       <!-- -------mobile view sidebar-------- -->
+       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header justify-content-end ">
+          <button type="button" class="btn-close pe-4 pt-4" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-header justify-content-center">
+            <a href="index.html"><img src="./assets/images/header_footer/logo.svg" alt=""></a>
+          
+        </div>
+        <div class="offcanvas-body ">
+         
+          <ul class="nav nav-pills mb-3 justify-content-start px-4" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active hover-underline-animation " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Main Menu</button>
+              
+            </li>
+            <li class="nav-item ms-2" role="presentation">
+              <button class="nav-link hover-underline-animation" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Categories</button>
+            </li>
+            
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button onclick="window.location.href = 'index.html';" class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              Home
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button onclick="window.location.href = 'shop.html';" class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Shop
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse fw-bold" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button onclick="window.location.href = 'blogs.html';" class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Blogs
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse fw-bold" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              Pages
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul class="">
+                                    <li class="ps-3 pe-5 py-2"><a class="pe-5 text-decoration-none" href="about_us.html">About Us</a></li>
+                                    <li class="ps-3 pe-5 py-2"><a class="pe-5 text-decoration-none" href="faq.html">FAQ</a></li>
+                                    <li class="ps-3 pe-5 py-2"><a class="pe-5 text-decoration-none" href="404.html">404 Page</a></li>
+                                    <li class="ps-3 pe-5 py-2"><a class="pe-5 text-decoration-none" href="order_tracking.html">Order Tracking </a></li>
+                                    <li class="ps-3 pe-5 py-2"><a class="pe-5 text-decoration-none" href="my_account.html">My Account</a></li>
+                                    <li class="ps-3 pe-5 py-2"><a class="pe-5 text-decoration-none" href="cart.html">Cart</a></li>
+                                    <li class="ps-3 pe-5 py-2"><a class="pe-5 text-decoration-none" href="wishlist.html">Wishlist</a></li>
+                                  </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="px-3 ms-1 py-2">
+                            <a href="contact_us.html" class="text-decoration-none fw-bold contact_mobile">Contact</a>
+                        </div>
+                      </div>
+                
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <ul class="">
+                    <li class="ps-3 pe-5 py-2"><a class="pe-5 text-decoration-none fw-bold" href="#">Vegetables</a></li>
+                    <li class="ps-3 pe-5 py-2"><a class="pe-5 text-decoration-none fw-bold" href="#">Meat & Poultry</a></li>
+                    <li class="ps-3 pe-5 py-2"><a class="pe-5 text-decoration-none fw-bold" href="#">Bread & Bakery</a></li>
+                    <li class="ps-3 pe-5 py-2"><a class="pe-5 text-decoration-none fw-bold" href="#">Fruits</a></li>
+                    <li class="ps-3 pe-5 py-2"><a class="pe-5 text-decoration-none fw-bold" href="#">Beverages</a></li>
+                    <li class="ps-3 pe-5 py-2"><a class="pe-5 text-decoration-none fw-bold" href="#">Snacks</a></li>
+                  </ul>
+            </div>
+            
+          </div>
+        </div>
+        </div>
+       
+      
+      
+    </header>
+    <!-- ------------------------------Blogs s1-------------------------------------- -->
+    <section class="blogs_s1 py-5 pb-2 d-flex flex-column w-100">
+        <div class="py-2 container px-md- mt-3">
+            <a><a href="#" class="text-black text-decoration-none"  data-aos="fade-down">Home</a><span class="text-black home_slash ms-1"><p class="mb-0 ms-3 d-inline-block">Blogs</p></span></a>
+
+                    <h1 class="text-black mt-3"  data-aos="fade-up">Blogs</h1>
+                </div>         
+    </section>
+
+    <!-- -------------------------------Blogs 2----------------------------------------- -->
+    <section class="blogs_s2">
+        <div class="container">
+            <div class="row py-5 justify-content-center">
+                <div class="col-lg-9 col-12" id="main_scroll">
+
+                    <div class="owl-carousel">
+ 
+                        <div class="item w-100"  data-aos="fade-down">
+                            <div class="card card_shadow border-0 ps-lg-4 px-1 pb-5" style="width: 90%;">
+                                <div class="img_contain position-relative"  data-aos="fade-down">
+                                    <img src="./assets/images/blogs/blog1.jpg" class="w-100 pt-3 blog_center_img" height="auto" alt="">
+                                    <p class="date_bg"><a href="#" class="text-decoration-none hover_a">January 9, 2024</a> <span class="before_dash position-relative"></span><span class="ms-3">By admin</span></p>
+                                </div>
+                              
+                                <h2 class="pt-4 fw-bold px-2"><a href="#" class="text-decoration-none hover_a"  data-aos="fade-up">Petite Red Potato and Green Bean Salad</a></h2>
+                                <p class="py-2 px-2"  data-aos="fade-down">Amet minim mollit non deserunt ullamco est sit aliqua amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet…
+                                </p>
+                                <div class="divider mt-3"></div>
+                            </div>
+                            <div class="card card_shadow border-0 ps-lg-4 px-1 pb-5" style="width: 90%;">
+                                <div class="img_contain position-relative"  data-aos="fade-up">
+                                    <img src="./assets/images/blogs/blog2.jpg" class="w-100 pt-3 blog_center_img" height="auto" alt="">
+                                    <p class="date_bg"><a href="#" class="text-decoration-none hover_a">January 9, 2024</a> <span class="before_dash position-relative"></span><span class="ms-3">By admin</span></p>
+                                </div>
+                              
+                                <h2 class="pt-4 fw-bold px-2"><a href="#" class="text-decoration-none hover_a"  data-aos="fade-up">Petite Red Potato and Green Bean Salad</a></h2>
+                                <p class="py-2 px-2"  data-aos="fade-down">Amet minim mollit non deserunt ullamco est sit aliqua amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet…
+                                </p>
+                                <div class="divider mt-3"></div>
+                            </div>
+                            <div class="card card_shadow border-0 ps-lg-4 px-1 pb-5" style="width: 90%;">
+                                <div class="img_contain position-relative"  data-aos="fade-down">
+                                    <img src="./assets/images/blogs/blog3.jpg" class="w-100 pt-3 blog_center_img" height="auto" alt="">
+                                    <p class="date_bg"><a href="#" class="text-decoration-none hover_a">January 9, 2024</a> <span class="before_dash position-relative"></span><span class="ms-3">By admin</span></p>
+                                </div>
+                              
+                                <h2 class="pt-4 fw-bold px-2"><a href="#" class="text-decoration-none hover_a"  data-aos="fade-up">Petite Red Potato and Green Bean Salad</a></h2>
+                                <p class="py-2 px-2"  data-aos="fade-down">Amet minim mollit non deserunt ullamco est sit aliqua amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet…
+                                </p>
+                                <div class="divider mt-3"></div>
+                            </div>
+                            
+                          
+                        </div>
+                        <div class="item w-100"  data-aos="fade-up">
+                            <div class="card card_shadow border-0 ps-lg-4 px-1 pb-5" style="width: 90%;">
+                                <div class="img_contain position-relative">
+                                    <img src="./assets/images/blogs/blog1.jpg" class="w-100 pt-3 blog_center_img" height="auto" alt="">
+                                    <p class="date_bg"><a href="#" class="text-decoration-none hover_a">January 9, 2024</a> <span class="before_dash position-relative"></span><span class="ms-3">By admin</span></p>
+                                </div>
+                              
+                                <h2 class="pt-4 fw-bold px-2"><a href="#" class="text-decoration-none hover_a">Petite Red Potato and Green Bean Salad</a></h2>
+                                <p class="py-2 px-2">Amet minim mollit non deserunt ullamco est sit aliqua amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet…
+                                </p>
+                                <div class="divider mt-3"></div>
+                            </div>
+                        </div>
+
+                      
+                    </div>
+
+                </div>
+                <div class="col-lg-3 blogs_right pt-3 d-lg-block d-none" id="side_scroll">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12">
+                            
+                                <div class="input-group position-relative">
+                                    <input type="text" class="search_contain rounded-0 py-3 w-100" placeholder="Search...">
+                                        <i class="fa-solid fa-magnifying-glass search_icon position-absolute"></i> 
+                                    
+                                </div>
+                                <h4 class="pt-5 fw-bold"  data-aos="fade-down">Latest Post</h4>
+                                <div class="row justify-content-center align-items-center"  data-aos="fade-down">
+                                    <div class="col-3 d-flex flex-column align-items-center p-0">
+                                        <img src="./assets/images/blogs/b1_sm.jpg" class="rounded-3 img-fluid" alt="">
+                                    </div>
+                                    <div class="col-8 d-flex flex-column align-items-center p-2">
+                                        <p class="mb-0 text-secondary w-100 text-left d-block font_blog_date">January 9,&nbsp;2024</p>
+                                            <p class="latest_ptag"><a href="#" class="hover_a text-decoration-none">Petite Red Potato and Green Bean Salad</a></p>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                
+                                <div class="row justify-content-center align-items-center"  data-aos="fade-down">
+                                    <div class="col-3 d-flex flex-column align-items-center p-0">
+                                        <img src="./assets/images/blogs/b2_sm.jpg" class="rounded-3 img-fluid" alt="">
+                                    </div>
+                                    <div class="col-8 d-flex flex-column align-items-center p-2">
+                                        <p class="mb-0 text-secondary w-100 text-left d-block font_blog_date">January 9,&nbsp;2024</p>
+                                            <p class="latest_ptag"><a href="#" class="hover_a text-decoration-none">Petite Red Potato and Green Bean Salad</a></p>
+                                    </div>
+                                </div>
+                                <div class="divider mt-3 mb-1"></div>
+
+                                <div class="row justify-content-center align-items-center"  data-aos="fade-down">
+                                    <div class="col-3 d-flex flex-column align-items-center p-0">
+                                        <img src="./assets/images/blogs/b3_sm.jpg" class="rounded-3 img-fluid" alt="">
+                                    </div>
+                                    <div class="col-8 d-flex flex-column align-items-center p-2">
+                                        <p class="mb-0 text-secondary w-100 text-left d-block font_blog_date">January 9,&nbsp;2024</p>
+                                            <p class="latest_ptag"><a href="#" class="hover_a text-decoration-none">Petite Red Potato and Green Bean Salad</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="divider p-0"></div>
+                            <div class="row mt-3">
+                                <h4 class="fw-bold"  data-aos="fade-down">Blog Categories</h4>
+                                <div class="col-10">
+                                    <ul class="list-unstyled">
+                                    <li  data-aos="fade-up" class="py-2 hover_li"><a href="#" class="text-decoration-none hover_a">Baby care <span class="d-inline-block float-end">(3)</span></a></li>
+                                    <li  data-aos="fade-down" class="py-2 hover_li"><a href="#" class="text-decoration-none hover_a">Home Decor<span class="d-inline-block float-end">(1)</span></a></li>
+                                    <li  data-aos="fade-up" class="py-2 hover_li"><a href="#" class="text-decoration-none hover_a">Beauty<span class="d-inline-block float-end">(2)</span></a></li>
+                                    <li  data-aos="fade-down" class="py-2 hover_li"><a href="#" class="text-decoration-none hover_a">Food<span class="d-inline-block float-end">(3)</span></a></li>
+                                    <li  data-aos="fade-up" class="py-2 hover_li"><a href="#" class="text-decoration-none hover_a">Kitchen<span class="d-inline-block float-end">(2)</span></a></li>
+                                </ul>
+                                </div>
+                            </div>
+                            <div class="divider p-0"></div>
+                            <div class="row mt-3">
+                                <h4 class="fw-bold"  data-aos="fade-down">Popular Post</h4>
+                                <ul>
+                                    <li  data-aos="fade-up" class="d-inline-block m-1 popular_bg"><a href="#" class="text-decoration-none hover_a">Fresh Produce</a></li>
+                                    <li data-aos="fade-down" class="d-inline-block m-1 popular_bg"><a href="#" class="text-decoration-none hover_a">Healthy eating</a></li>
+                                    <li data-aos="fade-up" class="d-inline-block m-1 popular_bg"><a href="#" class="text-decoration-none hover_a">Meal planning</a></li>
+                                    <li data-aos="fade-down" class="d-inline-block m-1 popular_bg"><a href="#" class="text-decoration-none hover_a">organic foods</a></li>
+                                </ul>
+                            </div>
+
+
+                            <div class="row mt-5 justify-content-center">
+                                <div class="col-12 p-2">
+                                   <div class="ice_contain"  style="overflow: hidden;"  data-aos="fade-down">
+                                    <p class="text-decoration-underline text_pos orange_text">2 packs save 20%</p>
+                                    <h3 class="fw-bold text-white text_pos1 text-center">enjoy rich taste</h3>
+                                    <img src="assets/images/blogs/img1.jpg"
+                                    class="img-fluid py-4 justify-content-center ice_img" alt="">
+                                    <a href="#" class="bg_shop text-decoration-none mt-3">Shop now</a>
+                                   </div>
+                                   
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="py-4 px-lg-5 px-md-4 px-3 d-flex flex-md-row flex-column contact_detail" id="contact_details">
+                <div class="">
+                    <span class="text-decoration-underline">customer support</span>
+                    <h4 class="fw-bold contact_number">(888) 910-2330</h4>
+                </div>
+                <div class="">
+                    <span class="text-decoration-underline">give feedback </span>
+                    <h4 class="fw-bold contact_email">contact@example.com</h4>
+                </div>
+                <div class="d-flex align-items-center justify-md-content-center justify-content-start social_media_icon_box gap-2">
+                    <a href="" class="text-decoration-none"><div class="social_media_icons  d-flex align-items-center justify-content-center rounded-circle  ">
+                     <i class="fa-brands fa-facebook-f"></i>
+                   </div></a>
+                   <a href=""  class="text-decoration-none"><div class="social_media_icons  d-flex align-items-center justify-content-center rounded-circle">
+                    <i class="fa-brands fa-instagram"></i>
+                   </div></a>
+                   <a href=""  class="text-decoration-none"><div class="social_media_icons  d-flex align-items-center justify-content-center rounded-circle">
+                   <i class="fa-brands fa-youtube"></i>
+                   </div></a>
+                   <a href=""  class="text-decoration-none"><div class="social_media_icons  d-flex align-items-center justify-content-center rounded-circle">
+                    <i class="fa-brands fa-pinterest"></i>
+                   </div></a>
+                </div>
+            </div>
+            <div class="d-flex align-items-center flex-lg-row flex-column px-xl-5 px-md-4 px-3 py-4 contact_info border">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="">
+                        <img src="./assets/images/header_footer/email_envelop.png" class="email_envelop" alt="">
+                    </div>
+                    
+                    <strong class="send_me_info">send me up-to-date <br> information</strong>
+                </div>
+                <div class="email_address_box  ps-4 rounded-pill d-flex justify-content-between align-items-center">
+                    <input type="text" placeholder="Email Address" class="email_input  py-2 " name="" id="">
+                    <button class=" fw-bold subscribe_btn rounded-pill text-nowrap px-4">Subscribe <i class="fa-solid fa-arrow-right "></i></button>
+                </div>
+                <div class="parallax_img_box d-lg-block d-none">
+                    <img class="image" src="./assets/images/header_footer/h1_img-3.png" alt="Parallax Image">
+                </div>
+            </div>
+            <div class="p-5 border footer_nav_links d-md-block d-none">
+                <div class="row pb-3">
+                    <div class="col-3">
+                        <div class="customer_box">
+                            <h4 class="fw-bold my-3 footer_head_title">customer</h4>
+                            <ul>
+                                <li><a href="" class="text-decoration-none customer_link py-2">Help Center</li></a>
+                                <li><a href="my_account.html" class="text-decoration-none customer_link py-2">My Account</li></a>
+                                <li><a href="order_tracking.html" class="text-decoration-none customer_link py-2">Track My Order</li></a>
+                                <li><a href="" class="text-decoration-none customer_link py-2">Return Policy</li></a>
+                                <li><a href="" class="text-decoration-none customer_link">Gift Cards</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="customer_box">
+                            <h4 class="fw-bold my-3 footer_head_title">about us</h4>
+                            <ul>
+                                <li><a href="" class="text-decoration-none customer_link py-2">Company Info</li></a>
+                                <li><a href="" class="text-decoration-none customer_link py-2">Press Releases</li></a>
+                                <li><a href="" class="text-decoration-none customer_link py-2">Careers</li></a>
+                                <li><a href="" class="text-decoration-none customer_link py-2">Reviews</li></a>
+                                <li><a href="" class="text-decoration-none customer_link">Investor Relations </li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="customer_box">
+                            <h4 class="fw-bold my-3 footer_head_title">quick links</h4>
+                            <ul> 
+                                <li><a href="" class="text-decoration-none customer_link py-2">Search</li></a>
+                                <li><a href="" class="text-decoration-none customer_link py-2">Become a Reseller</li></a>
+                                <li><a href="about_us.html" class="text-decoration-none customer_link py-2">About Us</li></a>
+                                <li><a href="contact_us.html" class="text-decoration-none customer_link py-2">Contact Us</li></a>
+                                <li><a href="" class="text-decoration-none customer_link">Terms of Service</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="customer_box mt-3 pe-5">
+                            <a href="index.html"><img src="./assets/images/header_footer/logo.svg" alt=""></a>
+                            <p class="pt-4 mb-1 text-decoration-underline store_location">store location</p>
+                            <p class="pe-5 mb-1">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                            <span class="meeting_time m-0 p-0">Mon – Fri: 9am – 5pm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright_box p-md-5 p-sm-4 p-3 mb-lg-0 mb-5 d-flex justify-content-between border flex-lg-row flex-column">
+                <div class="">
+                    <p class="copyrights_content m-0">Copyright © 2024 <span class="highlight">Jamoo</span>. All rights reserved</p>
+                </div>
+                <div class="d-flex gap-2 text-nowrap align-items-center">
+                    <span class="text-decoration-underline copyrights_content">we accept</span>
+                    <img src="./assets/images/header_footer/ft_payments.png" alt="">
+                </div>
+            </div>
+    
+    
+            <!-- -----mobile footer links------- -->
+            <div  id="mobile_footer" class="">
+    
+            
+            <div class="row d-lg-none d-flex   ">
+                <div class="col-3 p-0">
+                    <a href="shop.html" class=" p-2 border d-flex align-items-center justify-content-center flex-column mobile_nav_item">
+                        <img src="./assets/images/header_footer/mobile_home.png" alt="">
+                        <span>SHOP</span>
+                    </a>
+                </div>
+                <div class="col-3 p-0">
+                    <a href="my_account.html" class=" p-2 border d-flex align-items-center justify-content-center flex-column mobile_nav_item">
+                        <img src="./assets/images/header_footer/mobile_user.png" alt="">
+                        <span>ACCOUNT</span>
+                    </a>
+                </div>
+                <div class="col-3 p-0">
+                    <a href="" class="  p-2 border d-flex align-items-center justify-content-center flex-column mobile_nav_item">
+                        <img src="./assets/images/header_footer/mobile_search.png" alt="">
+                        <span>SEARCH</span>
+                    </a>
+                </div>
+                <div class="col-3 p-0">
+                    <a href="wishlist.html" class=" p-2 border d-flex align-items-center justify-content-center flex-column mobile_nav_item">
+                        <img src="./assets/images/header_footer/mobile_heart.png" alt="">
+                        <span>WISHLIST</span>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+        </footer>
+        <!-- ------------ scrop bottom to top ------  -->
+        <a href="#" id="scroll" style="display: none;"><span></span></a>
+        <!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+ <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script> -->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+        <script type="text/javascript" src="assets/owl/js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="assets/owl/js/owl.carousel.js"></script>
+        <!-- ----------- light-box------------ -->
+        <script src="assets/lightbox2-dev/dist/js/lightbox.js"></script>
+        <!-- --------------- aos script ------------------- -->
+        <script src="assets/aos/js/aos.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                var owl = $('.owl-carousel');
+
+                owl.owlCarousel({
+                    margin: 0,
+                    autoHeight: true,
+                    dots: true,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        600: {
+                            items: 1,
+                        },
+                        1000: {
+                            items: 1,
+                        }
+                    },
+                    dotsClass: 'owl-dots owl-pagination', // Custom class for pagination
+                    dotsEach: true, // Display numbers instead of dots
+                });
+
+                // Custom function to replace dots with numbers and navigate to the corresponding slide
+                function customPagination() {
+                    var dots = $('.owl-pagination .owl-dot');
+                    dots.each(function (index) {
+                        $(this).text(index + 1);
+
+                        // Add click event to navigate to the corresponding slide when clicking on a dot or number
+                        $(this).click(function () {
+                            owl.trigger('to.owl.carousel', [index, 300]); // 300 is the slide transition time in milliseconds
+                        });
+                    });
+                }
+
+                customPagination();
+                owl.on('changed.owl.carousel', customPagination);
+            });
+        </script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            const image = document.querySelector('.image');
+        const container = document.querySelector('.contact_detail');
+        
+        const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // The section is in view, start moving the image
+                        image.style.left = '-30%'; // Adjust this value based on the width of your image
+                    } else {
+                        // The section is out of view, reset the image position
+                        image.style.left = '0';
+                    }
+                });
+            });
+        
+            // Observe the first section
+            observer.observe(document.querySelector('.footer_nav_links'));
+        </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+body{
+    background-color: #FFFFFF;
+}
+.home_slash{
+    position: relative;
+}
+.home_slash{
+    position: relative;
+}
+.home_slash::before{
+    content: '/';
+    position: absolute;
+    top: 0;
+    margin:0 4px;
+    font-weight: 400;
+}
+.hover_a{
+    color: #000;
+    font-weight: 600;
+}
+.hover_a:hover{
+    color:#48D892;
+}
+.hover_a:hover span{
+    color:#48D892;
+}
+/* ---------blogs right-------------------------- */
+.blogs_right .hover_li:hover a,.blogs_right .hover_li:hover span{
+    color:#48D892;
+    cursor: pointer;
+}
+.blogs_right .search_contain{
+    padding: 20px 25px;
+    border-radius: 25px !important;
+    outline: none !important;
+    border: 1px solid #dddada;
+}
+.blogs_right .search_contain:focus{
+    border: 1px solid #48D892;
+}
+.blogs_right .search_icon{
+    right: 10%;
+    top: 35%;
+    color: #b4b1b1;
+}
+
+
+.font_blog_date{
+    font-size: 14px;
+}
+.blogs_right .popular_bg{
+    background-color: #EFF1F5;
+    padding: 10px;
+    border-radius: 25px;
+}
+.blogs_right .popular_bg:hover a,.blogs_right .latest_ptag:hover a{
+   color: #48D892 !important;
+}
+.blogs_right .ice_contain{
+    position: relative;
+    overflow: hidden;
+    height:420px;
+    border-radius: 12%;
+}
+.blogs_right .ice_img{
+    border-radius: 12%;
+    overflow: hidden;
+    height:450px;
+}
+.blogs_right .ice_img:hover{
+ transform: scale(1.05);
+ transform-origin: center center;  
+}
+.blogs_right .text_pos,.ice_img:hover .text_pos{
+    position: absolute;
+    top: 12%;
+    z-index: 1;
+    left: 15%;
+}
+
+.blogs_right .text_pos1,.ice_img:hover .text_pos1{
+    position: absolute;
+    top: 18%;
+    z-index: 1;
+    left: 15%;
+}
+.blogs_right .orange_text{
+    color: #d79d5b;
+}
+.blogs_right .bg_shop{
+    padding: 4px 12px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #313F90;
+    position: absolute;
+    top: 25%;
+    z-index: 2;
+    left: 15%;
+    font-weight: 500;
+    transition: background-color 2s ease;
+}
+.blogs_right .ice_contain:hover .bg_shop{
+    padding: 4px 12px;
+    border-radius: 25px;
+    background-color: #48D892 !important;
+    z-index: 2;
+    color: #313F90;
+    position: absolute;
+    top: 25%;
+    z-index: 2;
+    left: 15%;
+    font-weight: 500;
+}
+.owl-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #fff;
+    margin-bottom: 20px;
+}
+/* --------blog left---------------- */
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot.active{
+    margin:5px ;
+    background-color: #313F90;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    color: #fff;
+font-size: 16px;
+
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    height: 35px;
+    width: 35px;
+    margin:5px ;
+    color: #313F90;
+    transition: 2s hover color;
+    font-size: 16px;
+    border-radius: 50%;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot:hover{
+    background-color: #313f90e7;
+    color: #fff;
+}
+
+/* .card_shadow{
+box-shadow: 0 10px 30px hsla(0, 3%, 94%, 0.993);
+}
+.card_shadow .hover_blog{
+    color: black;
+}
+.card_shadow .hover_blog:hover{
+    color: #0d6efd;
+} */
+
+.blog_center_img{
+    border-radius: 30px;
+}
+
+.divider{
+    margin: 10px 0px;
+    height: 1px;
+    width: 100%;
+    background-color: #a2a2a2;
+}
+
+
+.blogs_s2 .mid_line{
+height: 1px;
+width: 95%;
+background-color: #d4d4d8;
+}
+.blog_contain i{
+    font-size: 8px;
+}
+
+
+.img_contain .date_bg{
+    padding: 10px 20px;
+    border-radius: 0 15px 5px 0;
+    background-color: #fff;
+    color: #313F90;
+    z-index: 2;
+    font-weight: 500;
+    position: absolute;
+    bottom: -30px;
+    padding-bottom: 25px;
+}
+.before_dash::before{
+    content: '';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 1px;
+    width: 10px;
+    background-color: #a2a2a2;
+    top: 50%;
+    left: 0;
+}

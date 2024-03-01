@@ -1,0 +1,45 @@
+.bg_sec1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pinkh1{
+    color: #F0508A !important;
+    font-size: 260px !important;
+    font-weight: 800 !important;
+}
+.vege{
+    position: absolute;
+    top:42%;
+}
+.text_404{
+    position: absolute;
+    top:120%;   
+    padding-bottom: 100px;
+}
+.btn_submit{
+    background-color: #313F90;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 12px 25px;
+}
+.btn_submit:hover{
+    padding: 12px 25px;
+    background-color: #48D892;
+    color:#313F90;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+@media only screen and (max-device-width: 500px) {
+
+    .pinkh1{
+        font-size: 190px !important;
+    }
+    .vege{
+        width: 100%;
+    }
+}
